@@ -1,0 +1,10 @@
+type Event {
+  id: ID
+  name: String
+  isPrivate: String
+  email: String
+}
+
+extend type Query {
+  GetAnEvent(id: ID!): Event!
+}

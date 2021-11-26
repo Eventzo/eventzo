@@ -1,0 +1,10 @@
+type User {
+  id: ID
+  name: String
+  isVerified: String
+  email: String
+}
+
+extend type Query {
+  GetAUser(id: ID!): User!
+}
